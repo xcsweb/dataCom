@@ -12,7 +12,11 @@
     "highlight.js": "^9.12.0",
     "less-loader": "^4.1.0",
     "vue": "^2.5.16",
-    "vue-highlight.js": "^2.2.0"
+    "vue-highlight.js": "^2.2.0",
+    "vuepress": "^0.14.10"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
   },
   "devDependencies": {
     "less": "^3.0.2",
