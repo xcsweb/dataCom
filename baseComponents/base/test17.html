@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模糊匹配 并校验 | 前端技术文档</title>
+    <meta name="description" content="Just for xcsweb">
+    
+    
+    <link rel="preload" href="/dataCom/assets/css/0.styles.0485cd97.css" as="style"><link rel="preload" href="/dataCom/assets/js/app.b26cd1ef.js" as="script"><link rel="preload" href="/dataCom/assets/js/17.7631e426.js" as="script"><link rel="prefetch" href="/dataCom/assets/js/10.44c0127f.js"><link rel="prefetch" href="/dataCom/assets/js/11.cd99e6c2.js"><link rel="prefetch" href="/dataCom/assets/js/12.0f21f1a2.js"><link rel="prefetch" href="/dataCom/assets/js/13.35c2070a.js"><link rel="prefetch" href="/dataCom/assets/js/14.3715fea0.js"><link rel="prefetch" href="/dataCom/assets/js/15.46588d72.js"><link rel="prefetch" href="/dataCom/assets/js/16.5e51f865.js"><link rel="prefetch" href="/dataCom/assets/js/18.31be53f8.js"><link rel="prefetch" href="/dataCom/assets/js/19.46890541.js"><link rel="prefetch" href="/dataCom/assets/js/2.d6343a4d.js"><link rel="prefetch" href="/dataCom/assets/js/20.4c493ff9.js"><link rel="prefetch" href="/dataCom/assets/js/21.d899bb9d.js"><link rel="prefetch" href="/dataCom/assets/js/22.16fbeef4.js"><link rel="prefetch" href="/dataCom/assets/js/23.93533105.js"><link rel="prefetch" href="/dataCom/assets/js/24.22c870c6.js"><link rel="prefetch" href="/dataCom/assets/js/25.fbaaba3d.js"><link rel="prefetch" href="/dataCom/assets/js/26.0b2fbf39.js"><link rel="prefetch" href="/dataCom/assets/js/27.060c269c.js"><link rel="prefetch" href="/dataCom/assets/js/28.2a6f29da.js"><link rel="prefetch" href="/dataCom/assets/js/29.2c37c3fc.js"><link rel="prefetch" href="/dataCom/assets/js/3.a851fbcc.js"><link rel="prefetch" href="/dataCom/assets/js/30.a8de805d.js"><link rel="prefetch" href="/dataCom/assets/js/31.45bddbd7.js"><link rel="prefetch" href="/dataCom/assets/js/32.beacb12a.js"><link rel="prefetch" href="/dataCom/assets/js/33.4449b0d2.js"><link rel="prefetch" href="/dataCom/assets/js/34.ee82b466.js"><link rel="prefetch" href="/dataCom/assets/js/35.dee8453c.js"><link rel="prefetch" href="/dataCom/assets/js/36.e3e56278.js"><link rel="prefetch" href="/dataCom/assets/js/37.7b6147e0.js"><link rel="prefetch" href="/dataCom/assets/js/38.86ba96ec.js"><link rel="prefetch" href="/dataCom/assets/js/39.12ae52f5.js"><link rel="prefetch" href="/dataCom/assets/js/4.83c446ab.js"><link rel="prefetch" href="/dataCom/assets/js/40.3993817f.js"><link rel="prefetch" href="/dataCom/assets/js/41.9325de31.js"><link rel="prefetch" href="/dataCom/assets/js/42.cc760d68.js"><link rel="prefetch" href="/dataCom/assets/js/43.1110a9d4.js"><link rel="prefetch" href="/dataCom/assets/js/44.3187ffec.js"><link rel="prefetch" href="/dataCom/assets/js/45.cd8fe68c.js"><link rel="prefetch" href="/dataCom/assets/js/46.d9863cd0.js"><link rel="prefetch" href="/dataCom/assets/js/47.a2f8c1da.js"><link rel="prefetch" href="/dataCom/assets/js/48.3b0b22c1.js"><link rel="prefetch" href="/dataCom/assets/js/49.d0e5c3f0.js"><link rel="prefetch" href="/dataCom/assets/js/5.3460495e.js"><link rel="prefetch" href="/dataCom/assets/js/6.a02b520f.js"><link rel="prefetch" href="/dataCom/assets/js/7.6222a152.js"><link rel="prefetch" href="/dataCom/assets/js/8.bd2f8b20.js"><link rel="prefetch" href="/dataCom/assets/js/9.d088c9da.js">
+    <link rel="stylesheet" href="/dataCom/assets/css/0.styles.0485cd97.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/dataCom/" class="home-link router-link-active"><!----> <span class="site-name">前端技术文档</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/dataCom/" class="nav-link">主页</a></div><div class="nav-item"><a href="/dataCom/baseComponents/" class="nav-link router-link-active">组件文档</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/dataCom/" class="nav-link">主页</a></div><div class="nav-item"><a href="/dataCom/baseComponents/" class="nav-link router-link-active">组件文档</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>布局类组件</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/dataCom/baseComponents/base/test1.html" class="sidebar-link">培训类别</a></li><li><a href="/dataCom/baseComponents/base/test2.html" class="sidebar-link">CampusBranchBar 城市/校区/分馆</a></li><li><a href="/dataCom/baseComponents/base/test5.html" class="sidebar-link">上传图片</a></li><li><a href="/dataCom/baseComponents/base/test6.html" class="sidebar-link">查看内容</a></li><li><a href="/dataCom/baseComponents/base/test7.html" class="sidebar-link">el-tabs</a></li><li><a href="/dataCom/baseComponents/base/test8.html" class="sidebar-link">日期组件</a></li><li><a href="/dataCom/baseComponents/base/test9.html" class="sidebar-link">多选框</a></li><li><a href="/dataCom/baseComponents/base/test10.html" class="sidebar-link">单选框</a></li><li><a href="/dataCom/baseComponents/base/test11.html" class="sidebar-link">下拉框</a></li><li><a href="/dataCom/baseComponents/base/test12.html" class="sidebar-link">提示信息</a></li><li><a href="/dataCom/baseComponents/base/test13.html" class="sidebar-link">批量</a></li><li><a href="/dataCom/baseComponents/base/test14.html" class="sidebar-link">dialog 和form表单组件</a></li><li><a href="/dataCom/baseComponents/base/test15.html" class="sidebar-link">Table 过滤</a></li><li><a href="/dataCom/baseComponents/base/test16.html" class="sidebar-link">描述</a></li><li><a href="/dataCom/baseComponents/base/test17.html" class="active sidebar-link">模糊匹配 并校验</a></li><li><a href="/dataCom/baseComponents/base/test22.html" class="sidebar-link">班级类别</a></li><li><a href="/dataCom/baseComponents/base/test24.html" class="sidebar-link">经办校区/分馆</a></li><li><a href="/dataCom/baseComponents/base/test25.html" class="sidebar-link">查看内容</a></li><li><a href="/dataCom/baseComponents/base/test26.html" class="sidebar-link">时间（HH:mm）</a></li><li><a href="/dataCom/baseComponents/base/test27.html" class="sidebar-link">模糊匹配销售</a></li><li><a href="/dataCom/baseComponents/base/test30.html" class="sidebar-link">筛选</a></li><li><a href="/dataCom/baseComponents/base/test31.html" class="sidebar-link">新版模糊匹配</a></li><li><a href="/dataCom/baseComponents/base/test32.html" class="sidebar-link">人脸识别</a></li><li><a href="/dataCom/baseComponents/base/test40.html" class="sidebar-link">FullCalendar</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>方法类</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>样式类</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>函数类</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="模糊匹配-并校验"><a href="#模糊匹配-并校验" aria-hidden="true" class="header-anchor">#</a> 模糊匹配 并校验</h1> <hr> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-form-item label=&quot;账号&quot; ref=&quot;userName&quot; prop=&quot;userName&quot;&gt;
+      &lt;el-autocomplete
+    v-model=&quot;formData.userName&quot;
+    :fetch-suggestions=&quot;querySearchAsync&quot;
+    :debounce=&quot;500&quot;
+    placeholder=&quot;请输入账号(字母、数字、下滑线),至少6位&quot;
+    @select=&quot;handleSelect&quot;
+    &gt;&lt;/el-autocomplete&gt;
+&lt;/el-form-item&gt;
+
+handleSelect(v){
+      //选择数据
+      this.formData.userId=v.userId;
+      this.formData.tel=v.tel;
+      this.$refs[&quot;formData&quot;].validateField(&quot;userName&quot;,(err)=&gt;{
+          console.log(err)
+      })
+  },
+
+
+querySearchAsync(queryString, cb){
+      //模糊匹配
+      this.userList = [];
+      this.userFind(queryString).then((res)=&gt;{
+          res.data.forEach((element)=&gt;{
+              this.userList.push({value:element.userName,userId:element.userId,tel:element.tel})
+          })
+          console.log(this.userList)
+          cb(this.userList); 
+      })
+  },
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/dataCom/baseComponents/base/test16.html" class="prev">
+          描述
+        </a></span> <span class="next"><a href="/dataCom/baseComponents/base/test22.html">
+          班级类别
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/dataCom/assets/js/app.b26cd1ef.js" defer></script><script src="/dataCom/assets/js/17.7631e426.js" defer></script>
+  </body>
+</html>
